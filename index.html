@@ -3,6 +3,7 @@
     <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>郭吉家</title>
     <style>
       body{
@@ -26,14 +27,31 @@
         background-color:#3c3;
         displat:block;
         overflow:hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
-      nav>a{
+      nav>div>button,nav>div>a{
+        border:0;
+        background-color:#3c3;
+        color:#000;
+        padding:10px;
+        font-size:20px;
+      }
+      nav>div>button:hover+div,nav>div>div:hover{
+        display:block;
+      }
+      nav>div>div{
+      display:none;
+      }
+      nav>div>div>a{
+        display:block;
         text-decoration:none;
         color:#000;
-        margin:10px;
+        padding:5px;
       }
-      nav>a:hover{
-        color:#ccc;
+      nav>div>div>a:hover{
+        color:#999;
       }
       img{
       max-height:90vh;
@@ -42,7 +60,11 @@
     </style>
   </head>
   <body>
-    <nav> 
+    <nav>
+    <div>
+    <a href="#"><i class="fa fa-chevron-circle-up"></i></a>
+    <button><i class="fa fa-navicon"></i></button>
+    <div>
       <a href="#lst">李诗彤</a>
       <a href="#lgy">刘圭宥</a>
       <a href="#cn">陈诺</a>
@@ -60,6 +82,8 @@
       <a href="#gyf">郭予凡</a>
       <a href="#wym">吴一鸣</a>
       <a href="#clh">陈砾航</a>
+      </div>
+      </div>
     </nav>
     <div style="padding:15px;">
     <h1>郭吉家</h1>
